@@ -1,0 +1,9 @@
+.image-wrapper {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("../../my-folder/images/two-clouds.svg?fill=red");
+}
+.image-wrapper_alias {
+    background-image: url("~my-folder/images/two-clouds.svg?fill=red");
+}
