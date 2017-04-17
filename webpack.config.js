@@ -8,7 +8,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.(png|jpg|svg)$/,
+                test: /\.(png|jpg)$/,
                 loader: 'url'
             },
             {
@@ -17,7 +17,7 @@ module.exports = {
                 loader: 'style!css'
             },
             {
-                test: /\.svg\?fill=/,
+                test: /\.svg(\?fill=.*)?|$/,
                 loaders: [
                     'svg-url-loader',
                     'svg-fill-loader'
